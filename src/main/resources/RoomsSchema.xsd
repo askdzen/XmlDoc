@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.example.com/Hotel"
+            xmlns="http://www.example.com/Hotel">
+
+  <xs:element name="hotel" type="hotelType"/>
+  <xs:complexType name="hotelType">
+    <xs:sequence>
+      <xs:element type="roomsType" name="rooms"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="roomsType">
+    <xs:sequence>
+      <xs:element type="roomType" name="room" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="roomType">
+    <xs:sequence>
+      <xs:element name="roomnumber" type="xs:string"/>
+      <xs:element name="price" type="xs:int"/>
+      <xs:element name="square" type="xs:int"/>
+      <xs:element name="places" type="xs:int"/>
+      <xs:element name="type" type="inroomtype"/>
+      <xs:element name="roomcount" type="inroomcount"/>
+      <xs:element type="xs:string" name="breakfast"/>
+      <xs:element name="wifi" type="xs:boolean"/>
+
+
+
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+
+    <xs:simpleType name="inroomcount">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SINGLE"/>
+            <xs:enumeration value="DOUBLE"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="inroomtype">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Residentroom"/>
+            <xs:enumeration value="Conferenceroom"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

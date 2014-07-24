@@ -1,0 +1,97 @@
+<ht:hotel xmlns:ht="http://www.example.com/Hotel"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.example.com/Hotel RoomsSchema.xsd">
+
+
+        <rooms>
+
+            <room id="001">
+                <roomnumber>001</roomnumber>
+                <price>1000</price>
+                <square>250</square>
+                <places>25</places>
+                <type>Conferenceroom</type>
+                <roomcount>SINGLE</roomcount>
+                <breakfast>true</breakfast>
+                <wifi>false</wifi>
+            </room>
+            <room id="002">
+                <roomnumber>002</roomnumber>
+                <price>700</price>
+                <square>150</square>
+                <places>25</places>
+                <type>Conferenceroom</type>
+                <roomcount>SINGLE</roomcount>
+                <breakfast>false</breakfast>
+                <wifi>true</wifi>
+
+
+            </room>
+            <room id="003">
+                <roomnumber>003</roomnumber>
+                <price>1200</price>
+                <square>350</square>
+                <places>25</places>
+                <type>Conferenceroom</type>
+                <roomcount>SINGLE</roomcount>
+                <breakfast>true</breakfast>
+                <wifi>false</wifi>
+
+            </room>
+            <room id="004">
+                <roomnumber>004</roomnumber>
+                <price>1000</price>
+                <square>250</square>
+                <places>25</places>
+                <type>Conferenceroom</type>
+                <roomcount>SINGLE</roomcount>
+                <breakfast>false</breakfast>
+                <wifi>false</wifi>
+
+            </room>
+
+            <room id="005">
+                <roomnumber>005</roomnumber>
+                <price>500</price>
+
+                <square>150</square>
+                <places>2</places>
+                <type>Conferenceroom</type>
+                <roomcount>SINGLE</roomcount>
+                <breakfast>true</breakfast>
+                <wifi>false</wifi>
+            </room>
+
+            <room id="006">
+                <roomnumber>006</roomnumber>
+                <price>700</price>
+                <square>100</square>
+                <places>2</places>
+                <type>Residentroom</type>
+                <roomcount>SINGLE</roomcount>
+                <breakfast>false</breakfast>
+                <wifi>false</wifi>
+            </room>
+            <room id="007">
+                <roomnumber>007</roomnumber>
+                <price>1000</price>
+                <square>150</square>
+                <places>3</places>
+                <type>Residentroom</type>
+                <roomcount>SINGLE</roomcount>
+                <breakfast>true</breakfast>
+                <wifi>false</wifi>
+            </room>
+            <room id="008">
+                <roomnumber>008</roomnumber>
+                <price>1200</price>
+                <square>250</square>
+                <places>4</places>
+                <type>Residentroom</type>
+                <roomcount>DOUBLE</roomcount>
+                <breakfast>true</breakfast>
+                <wifi>true</wifi>
+            </room>
+
+        </rooms>
+    </ht:hotel>

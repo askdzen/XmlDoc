@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<sch:schema xmlns:sch="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.example.com/Students"
+            xmlns="http://www.example.com/Students">
+
+        <sch:element name="students" type="stListType"/>
+        <sch:complexType name="stListType">
+        <sch:sequence>
+            <sch:element name="student" type="studentType" minOccurs="1" maxOccurs="unbounded"/>
+
+        </sch:sequence>
+        </sch:complexType>
+    <sch:complexType name="studentType">
+        <sch:sequence>
+            <sch:element name="lastname" type="sch:string"/>
+            <sch:element name="firstname" type="sch:string"/>
+            <sch:element name="birthday" type="sch:string"/>
+            <sch:element name="address" type="addressType"/>
+            <sch:element name="email" type="EMail"/>
+            <sch:element name="group" type="sch:string"/>
+            <sch:element name="education" type="eduType"/>
+        </sch:sequence>
+        <sch:attribute name="id" type="sch:int" use="required"/>
+    </sch:complexType>
+
+    <sch:complexType name="addressType">
+        <sch:sequence>
+            <sch:element name="city" type="sch:string"/>
+            <sch:element name="street" type="sch:string"/>
+            <sch:element name="build" type="sch:string"/>
+            <sch:element name="flat" type="sch:int"/>
+        </sch:sequence>
+    </sch:complexType>
+
+    <sch:simpleType name="EMail">
+        <sch:restriction base="sch:string">
+            <sch:pattern value="[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,4}"/>
+        </sch:restriction>
+    </sch:simpleType>
+    <sch:simpleType name="eduType">
+        <sch:restriction base="sch:string">
+            <sch:enumeration value="Бакалавриат"/>
+            <sch:enumeration value="Магистратура"/>
+        </sch:restriction>
+    </sch:simpleType>
+        </sch:schema>

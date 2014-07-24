@@ -1,0 +1,70 @@
+<st:students xmlns:st="http://www.example.com/Students"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.example.com/Students StudentsSchema.xsd">
+
+    <student id="001">
+        <lastname>Ivanov</lastname>
+        <firstname>Vanya</firstname>
+        <birthday>01.05.1998</birthday>
+        <address>
+            <city>
+                Karaganda
+            </city>
+            <street>Erubaeva</street>
+            <build>15</build>
+            <flat>47</flat>
+        </address>
+        <email>asdfasd@mail.ru</email>
+        <group>IS-22</group>
+        <education>Бакалавриат</education>
+    </student>
+    <student id="002">
+        <lastname>Ivanova</lastname>
+        <firstname>Elena</firstname>
+        <birthday>01.05.1998</birthday>
+        <address>
+            <city>
+                Karaganda
+            </city>
+            <street>Erubaeva</street>
+            <build>15</build>
+            <flat>47</flat>
+        </address>
+        <email>asdfasd@mail.ru</email>
+        <group>IS-22</group>
+        <education>Бакалавриат</education>
+    </student>
+    <student id="003">
+        <lastname>Petrov</lastname>
+        <firstname>Andrey</firstname>
+        <birthday>01.05.1998</birthday>
+        <address>
+            <city>
+                Karaganda
+            </city>
+            <street>Erubaeva</street>
+            <build>15</build>
+            <flat>47</flat>
+        </address>
+        <email>asdfasd@mail.ru</email>
+        <group>IS-22</group>
+        <education>Бакалавриат</education>
+    </student>
+    <student id="004">
+        <lastname>Sidorov</lastname>
+        <firstname>Sania</firstname>
+        <birthday>01.05.1998</birthday>
+        <address>
+            <city>
+                Karaganda
+            </city>
+            <street>Erubaeva</street>
+            <build>15</build>
+            <flat>47</flat>
+        </address>
+        <email>asdfasd@mail.ru</email>
+        <group>IS-22</group>
+        <education>Бакалавриат</education>
+    </student>
+
+</st:students>
