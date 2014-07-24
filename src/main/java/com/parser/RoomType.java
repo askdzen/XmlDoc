@@ -323,8 +323,9 @@ public class RoomType {
 
     @Override
     public String toString() {
-        return "RoomType{" +
-                "roomnumber='" + roomnumber + '\'' +
+        return "Room{" +
+                "id='" + id + '\'' +
+                ", roomnumber='" + roomnumber + '\'' +
                 ", price=" + price +
                 ", square=" + square +
                 ", places=" + places +
@@ -332,7 +333,6 @@ public class RoomType {
                 ", roomcount=" + roomcount +
                 ", breakfast='" + breakfast + '\'' +
                 ", wifi=" + wifi +
-                ", id='" + id + '\'' +
-                '}';
+                             '}';
     }
 }
